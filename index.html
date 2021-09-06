@@ -1,189 +1,375 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ahmed Ali</title>
     <style>
-      *{
-        padding: 0;
-        margin: 0;
-      }
-      #logobox{
-        width: 30%;
-        height: 100%;
-        float: right;
+        *{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    width: 100%;
+    height: 100px;
+
+}
+#logo-title{
+    float: right;
+    background-color: white;
+    width: 20%;
+}
+#logo-title img{
+    float: right;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+#logo-title p{
+    line-height: 100px;
+    font-size: 25px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: thin;
+    color: transparent;
+}
+nav{
+    float: left;
+    width: 80%;
+    text-align: center;
+    line-height: 100px;
+    background-image: linear-gradient(to left, red,black);
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    width: 100px;
+    display: inline-block;
+transition: 2s;
+}
+nav li{
+    display: inline-block;
+}
+nav a:hover{
+    background-color: white;
+    color: black;
+}
+main{
+    clear: both;
+    width: 100%;
+    height: 500px;
+    background-color: rgb(238, 84, 84);
+    animation-name: khaled;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+@keyframes khaled{
+    0%{
         background-color: white;
       }
-      header{
-        background-color: red;
+      25%{
+        background-color: black;
       }
-      #h1Header{
-        float: left;
-        list-style: 100px;
-        padding: 0 15px;
-        line-height: 100px;
-        color: black;
+      50%{
+        background-color: green ;
       }
-      #logo{
-      height: 100px;
-      border-radius:50% ;
+      75%{
+        background-color:yellow ;
       }
-      span{
-        float: right;
-        background-color: white;
+      100%{
+        background-color: orange;
       }
-      span img{
-        height: 100px;
-        border-radius: 50%;
-      }
+}
+aside{
+    clear: both;
+    width: 30%;
+    height: 500px;
+    background-color: white;
+    text-align: center;
+    position: relative;
+}
+
+aside #img1{
+    width: 90%;
+    height: 200px;
+    margin-top: 20px;
+    border-bottom: 3px solid black;
+    padding-bottom: 20px;
+
+}
+aside p{
+    margin-top: 10px;
+    font-size: 20px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid black;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.178);
+}
+aside div{
+height: 100px;
+width: auto;
+    text-align: center;
+    display: flex;
+    position: absolute;
+    left: 24%;
+
+}
+aside #cc{
+ width: 60px;
+border-bottom: 3px solid black;
+
+
+
+}
+aside #cc1{
+    width: 60px;
+   border-bottom: 3px solid black;
+
    
-      nav{
-        width:70%;
+   }
+   aside #cc2{
+    width: 60px;
+   border-bottom: 3px solid black;
+
+   
+   }
+aside #cc:hover{
+    width: 100px;
+   
+   
+   }
+   aside #cc1:hover{
+    width: 100px;
+   
+   
+   }
+   aside #cc2:hover{
+    width: 100px;
+   
+   
+   }
+main #cont{
+    position: absolute;
+    right: 20%;
+    top: 27%;
+    background-color: white;
+    width: 400px;
+    height: 200px;
+    text-align: center;
+   
+}
+main #name{
+    width: 70%;
+    font-size:25px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid red;
+}
+main #info{
+    font-size: 20px;
+    margin-top: 20px;
+
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+
+}
+footer img{
+    width: 400px;
+    height: 200px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 3px ridge rgb(134, 134, 134);
+}
+footer img:hover{
+    width: 500px;
+    height: 300px;
+
+}
+@media only screen and (max-width:1020px){
+    #logo-title{
+        width: 35%;
+    }
+    nav{
+        width: 65%;
+    }
+    main #cont{
+        position: absolute;
+        right: 9%;
+    }
+}
+@media only screen and (max-width:756){
+    aside div{
+        position: absolute;
+        left: 20%;
+    }
+    main #cont{
+        position: absolute;
+        right: 0%;
+    }
+}
+@media only screen and (max-width:577px){
+    #logo-title,nav{
+        width: 100%;
         text-align: center;
-      }
-      nav li{
-       display: inline-block;
-       line-height: 100px;
-       text-align: center;
-      }
-      nav a{
-        color: white;
+    }
+    header{
+        height: auto;
+    }
+    #logo-title img,p{
+        float: none;
+    }
+    main{
+        height: 1000px;
+        
+    }
+    main #cont{
         display: inline-block;
-        width: 100px;
-        text-decoration: none;
-        font-size: 15px;
-        font-weight: bold;
-      }
-      nav a:hover{
-        background-color: white;
-        color: black;
-        height: 100px ;
-        width: 100px;
-      }
-      
-      main{
-        width: 100%;
-        height: 450px;
-        border-top: 3px solid white ;
-        background-color: red;
-        animation-name: backcolor ;
-        animation-duration: 15s ;
-        animation-iteration-count: infinite;
-      }
-      @keyframes backcolor{
-        0%{
-          background-color: white;
-        }
-        25%{
-          background-color: black;
-        }
-        50%{
-          background-color: green ;
-        }
-        75%{
-          background-color:yellow ;
-        }
-        100%{
-          background-color: orange;
-        }
-      }
-      aside{
-        width: 30%;
-        height: 100%;
-        background-color: #fafafa;
-        text-align: center;
-        float: left;
-
-      }
-      aside img{
-        height: 50%;
-      }
-      #h1Aside{
-        padding: 10px 0;
-        border-bottom: 2px solid red;
-      }
-      #contact-box{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-top:15px ;
-      }
-      #contact-box img{
-        width: 45px;
-        border-bottom: 2px double red;
-        padding-bottom: 15px;
-        padding-left:3px ;
-        padding-right:3px ;
-
-      }
-      #contact-box img:hover{
-        width: 55px;
-        border-bottom: 2px solid rgb(0, 0, 0);
-
-      }
-     #article{
-       position: relative;
-       width: 70%;
-       height: 450px;
-      float: right;
-     }
-     #box{
-       padding: 15px;
+        top: 509px;
+        right: 13%;
+    }
+    aside{
+       width: 100%;
        text-align: center;
-       position: absolute;
-       width: 400px;
-       height: 180px;
-       background-color: #fafafa;
-       top: 50%;
-       left: 50%;
-       transform: translate(-50% , -50%);
-     }
-     #box h1{
-       border-bottom:3px solid red ;
-       padding: 15px 0;
-       font-family: 'Amiri', serif;
-     }
-     #box p{
-      font-family: 'Amiri', serif;
-      
-     }
+    }
+    aside div{
+        position: absolute;
+        left: 33%;
+    }
+    footer{
+        width: 100%;
+    }
+    footer #img1{
+        position: absolute;
+        top: 160%;
+        left: 15%;
+        width: 200px;
+        height: 100px;
+    }
+    footer #img2{
+        position: absolute;
+        top: 160%;
+        left: 55%;
+        width: 200px;
+        height: 100px;
+    }
+    footer #img3{
+        position: absolute;
+        top: 173%;
+        left: 35%;
+        width: 200px;
+        height: 100px;
+    }
+
+}
+@media only screen and (max-width:411px){
+    #logo-title{
+        width: 100%;
+        text-align: center;
+    }
+    nav{
+        width: 100%;
+        display: block;
+        height: auto;
+    }
+    header{
+        height: auto;
+    }
+    #logo-title img,p{
+        float: none;
+    }
+    main{
+        width: 100%;
+    }
+    main #cont{
+        display: inline-block;
+        top: 509px;
+        right: 9%;
+        width: 300px;
+    }
+    aside div{
+        position: absolute;
+        left: 25%;
+    }
+    footer{
+        width: 100%;
+    }
+    footer #img1{
+        position: absolute;
+        top: 160%;
+        left: 15%;
+        width: 100px;
+        height: 50px;
+    }
+    footer #img2{
+        position: absolute;
+        top: 160%;
+        left: 55%;
+        width: 100px;
+        height: 50px;
+    }
+    footer #img3{
+        position: absolute;
+        top: 173%;
+        left: 35%;
+        width: 100px;
+        height: 50px;
+    }
+   
+    
+}
     </style>
-  </head>
-  <body>
+</head>
+<body>
     <header>
-      <span>
-        <a href="#"><h1 id="h1Header">Ahmed Ali</h1></a>
-       <a href="#"><img id="logo" src="https://up4net.com/uploads4/up4net.com16309407500961.jpg" alt="" /></a>
-      </span>
-      <nav>
-        <ul>
-          <li>
-            <a href="#">الصفحه الرئيسية</a>
-            <a href="#">الفديوهات</a>
-            <a href="#">قوائم التشغيل</a>
-          </li>
-        </ul>
-      </nav>
+        <span id="logo-title">
+            <img src="https://up4net.com/uploads4/up4net.com16309407500961.jpg" alt="">
+            <p>Ahmed Ali</p>
+
+        </span>
+
+        <nav>
+            <ol>
+                <li>
+                    <a href="#">playlist</a>
+                </li>
+                <li>
+                    <a href="#">video</a>
+                </li>
+                <li>
+                    <a href="#">skatchware</a>
+                    
+                </li>
+            </ol>
+        </nav>
     </header>
+ 
     <main>
-      <aside>
-        <a href="#"><img src="https://up4net.com/uploads4/up4net.com16309407500961.jpg" alt=""></a>
-        <h1 id="h1Aside">AhMeD Ali</h1>
-         <div id="contact-box">
-          <a href=""><img src="https://cdn3.iconfinder.com/data/icons/peelicons-glyph/512/facebook__social__media_social__media-512.png" alt=""></a>
-          <a href=""><img src="https://cdn3.iconfinder.com/data/icons/peelicons-glyph/512/whatsapp__icons__logo__social__media-128.png" alt=""></a>
-          <a href=""><img src="https://cdn3.iconfinder.com/data/icons/peelicons-glyph/512/twitter__social__media__icons-128.png" alt=""></a>
-          <a href=""><img src="https://cdn3.iconfinder.com/data/icons/peelicons-glyph/512/youtube__logo__social__media_icons-128.png" alt=""></a> 
-         </div>
-      </aside>
-      <article id="article">
-     <div id="box">
-      <h1>انا محترف اسكتشوير</h1>
-      <p>انا اعيش في مصر لدي خبره في اسكتشوير لتصميم التطبيقات الهاتف,و انا اساعد الاخرين في تعلم اسكتشوير</p>
-     </div>
-      </article>
+        <aside>
+            <img src="https://up4net.com/uploads4/up4net.com16309407500961.jpg" alt="logo" title="Ahmes Ali" id="img1">
+            <p>Ahmed Ali</p>
+                <div>
+                  
+                    <a href="#"><img src="https://cdn3.iconfinder.com/data/icons/peelicons-glyph/512/facebook__social__media_social__media-512.png" alt="" id="cc"></a>
+                    <a href="#"><img src="https://cdn3.iconfinder.com/data/icons/peelicons-glyph/512/twitter__social__media__icons-128.png" alt="" id="cc1"></a>
+                    <a href="#"><img src="https://cdn3.iconfinder.com/data/icons/peelicons-glyph/512/whatsapp__icons__logo__social__media-128.png" alt="" id="cc2"></a>
+                  
+        </div>
+        </aside> 
+        <div id="cont">
+            <center><p id="name">انا محترف اسكتشوير</p></center>
+            
+            <p id="info">انا اعيش في مصر لدي خبره في اسكتشوير لتصميم التطبيقات الهاتف,و انا اساعد الاخرين في تعلم اسكتشوير</p>
+        </div>
     </main>
-  </body>
+    <footer>
+        <a href="#"><img src="https://up4net.com/uploads4/up4net.com16309407500961.jpg" alt="" id="img1"></a>
+        <a href="#"><img src="https://up4net.com/uploads4/up4net.com16309407500961.jpg" alt="" id="img2"></a>
+        <a href="#"><img src="https://up4net.com/uploads4/up4net.com16309407500961.jpg" alt="" id="img3"></a>
+        
+        
+        
+    </footer>
+
+</body>
 </html>
